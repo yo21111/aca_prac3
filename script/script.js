@@ -1,7 +1,7 @@
 let notice = document.getElementById("bbsNotice");
 let gallery = document.getElementById("bbsGallery");
 let btnNotice = document.getElementById("button_notice");
-let bbsGallery = document.getElementById("button_gallery");
+let btnGallery = document.getElementById("button_gallery");
 
 document.getElementById("button_notice").addEventListener("click", fnNotice);
 function fnNotice() {
