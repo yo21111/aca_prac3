@@ -5,7 +5,7 @@ let btnGallery = document.getElementById("button_gallery");
 
 document.getElementById("button_notice").addEventListener("click", fnNotice);
 function fnNotice() {
-    notice.style.display="block";
+    notice.style.display="table";
     gallery.style.display="none";
     btnNotice.className="activeTab";
     btnGallery.className="unactiveTab";
