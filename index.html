@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인페이지</title>
+    <title>JUST쇼핑몰</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -38,12 +38,15 @@
             <div id="bbsArea">
 
                 <div id="bbsFrame">
-                    <button type="button" class="activeTab">공지사항</button>
-                    <button type="button">갤러리</button>
-                    <div id="bbs">
-                        
-                        <table id="bbsNotice">
-                            <tbody>
+                    <button type="button" class="activeTab" id="button_notice">공지사항</button>
+                    <button type="button" id="button_gallery">갤러리</button>
+
+                    <!----------------------------- multitab container 시작------------------------------->
+                    <div id="bbs">  
+                                                
+                        <div class="tabContent" id="notice">
+                            <table id="bbsNotice">
+                                <tbody>
                                 <tr>
                                     <td>3월 재입고 품목입니다. </td>
                                     <td>2020.03.14</td>
@@ -62,13 +65,40 @@
                                 </tr>
                             </tbody>
                         </table> <!--table#bbsNotice-->
+                    </div> <!--div class="tabContent" id="notice"-->
+                        
+                    <div class="tabContent" id="gallery">
+                        <table id="bbsGallery">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <img src="images/image_multitab/icon1.jpg" alt="갤러리이미지1">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="images/image_multitab/icon2.jpg" alt="갤러리이미지2">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="images/image_multitab/icon3.jpg" alt="갤러리이미지3">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> <!-------div.tabContent#gallery------->
 
                     </div><!--div#bbs-->
+                    <!----------------------------- multitab container 끝------------------------------->
                 </div> <!--div#bbsFrame-->
 
             </div>
             <!--div#bbsArea-->
             
+
             <div id="bannerArea">
                 
                 <div id="bannerFrame">
@@ -94,6 +124,7 @@
             </div>
             <!--div#shortcutArea-->
         </div>
+
         <!-----------------------div#contents----------------------->
 
         <footer id="footer">
@@ -123,6 +154,6 @@
         <!-----------------------footer----------------------->
     </div>
     <!-----------------------div#wrap----------------------->
-
+<script src="script/script.js"></script>
 </body>
 </html>

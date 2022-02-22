@@ -103,6 +103,7 @@ div#slideArea {
 div#contents {
     height: 200px;
     display: flex;
+    margin-top: 10px;
 }
 
 #contents > div {
@@ -117,7 +118,7 @@ div#contents {
 #contents div#bbsArea>div#bbsFrame {
     text-align: left;
     width: 372px;
-    display: inline-block;
+    display: inline-block;;
 }
 
 #contents div#bbsArea>div#bbsFrame>button {
@@ -164,6 +165,18 @@ div#contents {
 #contents div#bbsArea>div#bbsFrame>#bbs table#bbsNotice td:last-child {
     text-align: right;
 }
+
+#contents div#bbsArea #gallery {
+    margin: 0 10px;
+}
+
+#contents div#bbsArea #gallery >#bbsGallery {
+    width: 368px;
+    height: 156px;
+    text-align: center;
+    display: none;
+}
+
 
 #contents div#bannerArea {
     flex: 1;
