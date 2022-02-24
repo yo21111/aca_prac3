@@ -1,20 +1,20 @@
-let notice = document.getElementById("bbsNotice");
-let gallery = document.getElementById("bbsGallery");
-let btnNotice = document.getElementById("button_notice");
-let btnGallery = document.getElementById("button_gallery");
+$(function(){
+    let notice = $("#bbsNotice");
+    let gallery = $("#bbsGallery");
+    let btnNotice = $("#button_notice");
+    let btnGallery = $("#button_gallery");
 
-document.getElementById("button_notice").addEventListener("click", fnNotice);
-function fnNotice() {
-    notice.style.display="table";
-    gallery.style.display="none";
-    btnNotice.className="activeTab";
-    btnGallery.className="unactiveTab";
-}
-
-document.getElementById("button_gallery").addEventListener("click", fnGallery);
-function fnGallery() {
-    notice.style.display="none";
-    gallery.style.display="table";
-    btnNotice.className="unactiveTab";
-    btnGallery.className="activeTab";
-}
+    $(btnNotice).click(function(){
+        $(notice).css({'display' : 'table'});
+        $(gallery).css({'display' : 'none'});
+        $(btnNotice).attr("class", "activeTab");
+        $(btnGallery).attr("class", "unactiveTab");
+    });
+    
+    $(btnGallery).click(function(){
+        $(notice).css({'display' : 'none'});
+        $(gallery).css({'display' : 'table'});
+        $(btnNotice).attr("class", "unactiveTab");
+        $(btnGallery).attr("class", "activeTab");
+    });
+});
